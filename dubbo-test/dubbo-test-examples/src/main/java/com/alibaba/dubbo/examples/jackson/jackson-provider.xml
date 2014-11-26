@@ -22,7 +22,7 @@
 
     <dubbo:application name="jackson-provider"  />
     
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://172.18.9.186:2181" />
     <dubbo:provider timeout="60000"/>
     <dubbo:protocol name="dubbo" port="20880" serialization="jackson" />
     

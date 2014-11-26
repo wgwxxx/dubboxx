@@ -22,7 +22,7 @@
 
     <dubbo:application name="demo-provider" owner="shenli" organization="dangdang"/>
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="zookeeper://172.18.9.186:2181"/>
 
     <dubbo:monitor protocol="registry"/>
 

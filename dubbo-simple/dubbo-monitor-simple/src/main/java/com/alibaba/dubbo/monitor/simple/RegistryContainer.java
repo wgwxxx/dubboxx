@@ -207,7 +207,7 @@ public class RegistryContainer implements Container {
     public void start() {
         String url = ConfigUtils.getProperty(REGISTRY_ADDRESS);
         if (url == null || url.length() == 0) {
-            throw new IllegalArgumentException("Please set java start argument: -D" + REGISTRY_ADDRESS + "=zookeeper://127.0.0.1:2181");
+            throw new IllegalArgumentException("Please set java start argument: -D" + REGISTRY_ADDRESS + "=zookeeper://172.18.9.186:2181");
         }
         registry = (RegistryService) SpringContainer.getContext().getBean("registryService");
         URL subscribeUrl = new URL(Constants.ADMIN_PROTOCOL, NetUtils.getLocalHost(), 0, "",
